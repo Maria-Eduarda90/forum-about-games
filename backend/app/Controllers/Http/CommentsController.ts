@@ -3,20 +3,28 @@ import Comment from 'App/Models/Comment';
 
 export default class CommentsController {
     public async create({ request, auth }: HttpContextContract) {
-        const data = request.all();
-        const user_id = auth.user?.id;
+        try {
+            const data = request.all()
+            const user_id = auth.user?.id
 
-        const createComment = await Comment.create({
-          ...data,
-          user_id,
-        })
+            const createComment = await Comment.create({
+              ...data,
+              user_id,
+            })
 
-        return createComment;
+            return createComment;
+        } catch(err){
+            console.log(err);
+        }
     }
 
     public async index(){
-        const comment = await Comment.query().preload('user');
+        try {
+            const comment = await Comment.query().preload('user');
 
-        return comment;
+            return comment;
+        } catch(err){
+            console.log(err);
+        }
     }
 }
