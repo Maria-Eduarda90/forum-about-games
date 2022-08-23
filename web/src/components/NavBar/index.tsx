@@ -22,17 +22,17 @@ export function NavBar(){
 
                 <div className={styles.links}>
                     <ul>
-                        <li>
-                            <Link to="/">Home</Link>
+                        <li onClick={closeMobileMenu}>
+                            <Link to="/home">Home</Link>
                         </li>
-                        <li>
-                            <Link to="/">Sobre</Link>
+                        <li onClick={closeMobileMenu}>
+                            <Link to="/Sobre">Sobre</Link>
                         </li>
-                        <li>
-                            <Link to="/">Fórum</Link>
+                        <li onClick={closeMobileMenu}>
+                            <Link to="/Fórum">Fórum</Link>
                         </li>
-                        <li>
-                            <Link to="/">Regras</Link>
+                        <li onClick={closeMobileMenu}>
+                            <Link to="/Regras">Regras</Link>
                         </li>
                     </ul>
                 </div>
