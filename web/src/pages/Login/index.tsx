@@ -13,14 +13,14 @@ export function Login(){
                     <img src={iconImg} alt="controle ps" />
                     <h1>WELCOME!</h1>
                     <p>Bem vindo de volta ao fórum sobre Games 🎮</p>
-                    <Input type={'text'} placeholder={'Username'} />
+                    <Input type={'email'} placeholder={'E-mail'} />
                     <Input type={'password'} placeholder={'Password'} />
 
                     <Button>
                         Login
                     </Button>
 
-                    <span>ainda não possui uma conta?<Link to="/">Signup</Link></span>
+                    <span>ainda não possui uma conta?<Link to="/cadastrar">Signup</Link></span>
                 </form>
             </div>
         </div>
