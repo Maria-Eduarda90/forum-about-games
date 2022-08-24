@@ -21,7 +21,7 @@ export function Signup() {
                         Signup
                     </Button>
 
-                    <span>já possui uma conta?<Link to="/">Signup</Link></span>
+                    <span>já possui uma conta?<Link to="/">Login</Link></span>
                 </form>
             </div>
         </div>
