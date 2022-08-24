@@ -28,9 +28,9 @@ export function NavBar(){
                             })}>Home</NavLink>
                         </li>
                         <li onClick={closeMobileMenu}>
-                            <NavLink to="/Sobre" style={({ isActive }) => ({
+                            <NavLink to="/Jogos" style={({ isActive }) => ({
                                 color: isActive ? '#ffffff' : '#a9a4a4',
-                            })}>Sobre</NavLink>
+                            })}>Jogos</NavLink>
                         </li>
                         <li onClick={closeMobileMenu}>
                             <NavLink to="/Fórum" style={({ isActive }) => ({
