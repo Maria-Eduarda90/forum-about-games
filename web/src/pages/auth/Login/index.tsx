@@ -1,8 +1,7 @@
-import { Button } from '../../components/Button';
-import { Input } from '../../components/Input';
+import { Input } from '../../../components/Input';
+import { Button } from '../../../components/Button';
 import styles from './styles.module.scss';
-
-import iconImg from '../../img/680ed9ad3e25665eb9f5d9f598a119b7.jpg';
+import iconImg from '../../../img/680ed9ad3e25665eb9f5d9f598a119b7.jpg';
 import { Link } from 'react-router-dom';
 
 export function Login(){
