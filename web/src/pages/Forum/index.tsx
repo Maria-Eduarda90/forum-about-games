@@ -1,5 +1,9 @@
+import { NavBar } from "../../components/NavBar";
+
 export function Forum(){
     return(
-        <h1>Hello world</h1>
+        <>
+            <NavBar/>
+        </>
     );
 }
