@@ -33,7 +33,7 @@ export function NavBar(){
                             })}>Jogos</NavLink>
                         </li>
                         <li onClick={closeMobileMenu}>
-                            <NavLink to="/Fórum" style={({ isActive }) => ({
+                            <NavLink to="/Forum" style={({ isActive }) => ({
                                 color: isActive ? '#ffffff' : '#a9a4a4',
                             })}>Fórum</NavLink>
                         </li>
