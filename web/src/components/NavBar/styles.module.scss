@@ -11,11 +11,11 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 1rem;
+        padding: 1.5rem;
 
         .wrapper {
             h1 {
-                color: #fff;
+                color: #908d8d;
             }
         }
 
@@ -34,8 +34,12 @@
                     
                     a {
                         text-decoration: none;
-                        color: #fff;
+                        color: #908d8d;
                         font-size: 1.2rem;
+                    }
+
+                    a:hover {
+                        color: #fff;
                     }
                 }
             }
@@ -46,7 +50,7 @@
         opacity: 1;
         visibility: visible;
         
-        background: #393838;
+        background: #2c2c2c;
 
         height: 100%;
         width: 100%;
@@ -66,5 +70,29 @@
     .mobileMenu {
         z-index: 1000;
         cursor: pointer;
+    }
+}
+
+@media (min-width: 800px) {
+    .header {
+        nav {
+            .links {
+                opacity: 1;
+                visibility: visible;
+                top: 0;
+                
+            }
+
+            .links {
+                ul {
+                    display: flex;
+                    gap: 2rem;
+                }
+            }
+
+            .mobileMenu {
+                display: none;
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import closeMenu from '../../img/closeMenu.svg';
 import menuIcon from '../../img/menu.svg';
 
@@ -23,16 +23,24 @@ export function NavBar(){
                 <div className={styles.links}>
                     <ul>
                         <li onClick={closeMobileMenu}>
-                            <Link to="/home">Home</Link>
+                            <NavLink to="/home" style={({ isActive }) => ({
+                                color: isActive ? '#ffffff' : '#a9a4a4',
+                            })}>Home</NavLink>
                         </li>
                         <li onClick={closeMobileMenu}>
-                            <Link to="/Sobre">Sobre</Link>
+                            <NavLink to="/Sobre" style={({ isActive }) => ({
+                                color: isActive ? '#ffffff' : '#a9a4a4',
+                            })}>Sobre</NavLink>
                         </li>
                         <li onClick={closeMobileMenu}>
-                            <Link to="/Fórum">Fórum</Link>
+                            <NavLink to="/Fórum" style={({ isActive }) => ({
+                                color: isActive ? '#ffffff' : '#a9a4a4',
+                            })}>Fórum</NavLink>
                         </li>
                         <li onClick={closeMobileMenu}>
-                            <Link to="/Regras">Regras</Link>
+                            <NavLink to="/Regras" style={({ isActive }) => ({
+                                color: isActive ? '#ffffff' : '#a9a4a4',
+                            })}>Regras</NavLink>
                         </li>
                     </ul>
                 </div>
