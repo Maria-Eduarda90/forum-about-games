@@ -13,35 +13,37 @@
             font-size: 1rem;
             resize: none;
             background: transparent;
-            color: #e1e1e1;
+            color: #b1b0b0;
             border: 0;
+            overflow-y: hidden;
         }
 
         div {
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            margin-top: 0.5rem;
 
             span {
                 color: #fff;
                 .count {
-                    color: #7a3535;
+                    color: #a70f0f;
                     margin-right: 1rem;
                 }
             }
 
-
             button {
                 border: 0;
                 color: #fff;
-                background: #7a3535;
-                padding: 0.5rem 0.5rem 0.5rem;
+                background: #a70f0f;
+                padding: 0.6rem;
                 border-radius: 16px;
                 cursor: pointer;
                 transition: all .3s;
                 
-                &:hover {
-                    background: #a70f0f;
+                &:disabled {
+                    background: #5a2b2b;
+                    cursor: no-drop;
                 }
             }
         }
