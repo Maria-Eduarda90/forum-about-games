@@ -31,7 +31,7 @@ export function NavBar(){
         <header className={`${styles.header} ${colorChange ? `${styles.navbar}` : ''}`}>
             <nav className={click ? styles.active : ''}>
                 <div className={styles.wrapper}>
-                    <h1>Geek? 🎮</h1>
+                    <h1>Game-Geek 🎮</h1>
                 </div>
 
                 <div className={styles.links}>
