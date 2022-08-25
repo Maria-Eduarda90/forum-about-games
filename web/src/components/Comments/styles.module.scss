@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #908d8d;
+
+    .image {
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        margin-left: 1rem;
+
+        .name {
+            color: #cecccc;
+            font-size: 14px;
+        }
+
+        .email {
+            color: #908d8d;
+            margin-left: 0.5rem;
+            font-size: 12px;
+        }
+
+        p {
+            color: #cecccc;
+            border: 1px dashed #666565;
+            padding: 1rem;
+            word-break: break-word;
+            margin-top: 0.5rem;
+        }
+    }
+}

@@ -8,7 +8,7 @@ export function SendCommentForm(){
 
                 <div>
                     <span>
-                        <span>0</span> / <span className={styles.count}>250</span>
+                        <span>0</span> / <span className={styles.count}>140</span>
                     </span>
                     <button>Comentar</button>
                 </div>
