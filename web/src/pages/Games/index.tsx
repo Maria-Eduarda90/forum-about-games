@@ -1,3 +1,4 @@
+import { CarouselGames } from "../../components/CarouselGames";
 import { NavBar } from "../../components/NavBar";
 import styles from './styles.module.scss';
 
@@ -6,9 +7,8 @@ export function Games(){
         <>
             <NavBar/>
 
-            <div className={styles.title}>
-                <h1>Melhores Jogos!</h1>
-                <p>Na opinião dessa mera desenvolvedora ;-)</p>
+            <div className={styles.jogos}>
+                <CarouselGames />
             </div>
         </>
     );
