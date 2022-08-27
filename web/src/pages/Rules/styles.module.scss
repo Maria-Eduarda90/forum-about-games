@@ -1,0 +1,29 @@
+.container {
+    margin-top: 7rem;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: #908d8d;
+        }
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .rules {
+        margin-top: 4rem;
+        color: #908d8d;
+        text-align: center;
+
+        section {
+            margin-top: 3rem;
+        }
+    }
+}
