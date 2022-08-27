@@ -4,13 +4,12 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Link } from 'react-router-dom';
 import { cods } from '../../mock/ArrayGames';
 
 export function CarouselGames(){
     return(
         <>
-        <Link to ="/" className={styles.title}>Call Of Duty:</Link>
+            <a href="https://www.callofduty.com/br/pt" target="_blank" className={styles.title}>Call Of Duty:</a>
         <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             navigation
