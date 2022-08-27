@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { VscSignOut } from 'react-icons/vsc';
+import { NavLink } from "react-router-dom";
 import closeMenu from '../../img/closeMenu.svg';
 import menuIcon from '../../img/menu.svg';
 
@@ -31,7 +32,10 @@ export function NavBar(){
         <header className={`${styles.header} ${colorChange ? `${styles.navbar}` : ''}`}>
             <nav className={click ? styles.active : ''}>
                 <div className={styles.wrapper}>
-                    <h1>Game-Geek 🎮</h1>
+                    <button>
+                        <VscSignOut size="25" color="#908d8d"/>
+                        <span>Sair</span>
+                    </button>
                 </div>
 
                 <div className={styles.links}>

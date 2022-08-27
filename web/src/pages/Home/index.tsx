@@ -34,6 +34,10 @@ export function Home(){
 
                         <img src={GodOfWar} alt="" />
                     </div>
+
+                    <div>
+                        
+                    </div>
                 </section>
             </main>
         </>
