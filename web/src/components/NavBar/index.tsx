@@ -28,6 +28,20 @@ export function NavBar(){
         setClick(false);
     }
 
+    function ClickMenu(){
+        return (
+            <>
+                {
+                    click ? (
+                        <img src={closeMenu} alt="" />
+                    ) : (
+                        <img src={menuIcon} alt="" />
+                    )
+                }
+            </>
+        )
+    }
+
     return(
         <header className={`${styles.header} ${colorChange ? `${styles.navbar}` : ''}`}>
             <nav className={click ? styles.active : ''}>
@@ -63,13 +77,7 @@ export function NavBar(){
                     </ul>
                 </div>
                 <div onClick={handleClick} className={styles.mobileMenu}>
-                    {
-                        click ? (
-                            <img src={closeMenu} alt="" />
-                        ) : (
-                            <img src={menuIcon} alt="" />
-                        )
-                    }
+                    <ClickMenu/>
                 </div>
             </nav>
         </header>
