@@ -1,6 +1,7 @@
 import { NavBar } from "../../components/NavBar";
 import imgFundo from '../../img/415518.jpg';
 import GodOfWar from '../../img/God-of-War-First-PC-mods.png';
+import SpiderMan from '../../img/CjY47LXQ9XrtJolJNVGwc29D.png';
 
 import styles from './styles.module.scss';
 
@@ -23,7 +24,7 @@ export function Home(){
                 </section>
 
                 <section className={styles.content}>
-                    <div>
+                    <div className={styles.cardGfw}>
                         <main>
                             <h1>God-of-War</h1>
                             <p>
@@ -35,8 +36,14 @@ export function Home(){
                         <img src={GodOfWar} alt="" />
                     </div>
 
-                    <div>
-                        
+                    <div className={styles.card}>
+                        <img src={SpiderMan} alt="" />
+                        <main>
+                            <h1>Spider-Man: Miles Morales</h1>
+                            <p>
+                                Spider-Man: Miles Morales é um jogo eletrônico de ação-aventura desenvolvido pela Insomniac Games e publicado pela Sony Interactive Entertainment para o PlayStation 4 e PlayStation 5
+                            </p>
+                        </main>
                     </div>
                 </section>
             </main>
