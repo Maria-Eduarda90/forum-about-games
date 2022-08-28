@@ -4,6 +4,7 @@ import GodOfWar from '../../img/God-of-War-First-PC-mods.png';
 import SpiderMan from '../../img/CjY47LXQ9XrtJolJNVGwc29D.png';
 
 import styles from './styles.module.scss';
+import { Footer } from "../../components/Footer";
 
 export function Home(){
     return(
@@ -47,6 +48,8 @@ export function Home(){
                     </div>
                 </section>
             </main>
+
+            <Footer/>
         </>
     );
 }
