@@ -1,6 +1,11 @@
+import { AuthProvider } from './context/AuthContext';
 import { AppRouter } from './router';
 import './styles/global.scss';
 
 export function App() {
-  return <AppRouter/>
+  return (
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
+  );
 }
