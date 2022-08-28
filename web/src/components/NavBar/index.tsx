@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { VscSignOut } from 'react-icons/vsc';
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 import closeMenu from '../../img/closeMenu.svg';
 import menuIcon from '../../img/menu.svg';
 
@@ -9,6 +10,7 @@ import styles from './styles.module.scss';
 export function NavBar(){
     const [colorChange, setColorChange] = useState(false);
     const [click, setClick] = useState(false);
+    const { userSignOut } = useAuth();
 
     function changeNavbarColor(){
         if(window.scrollY >= 60){
@@ -46,7 +48,7 @@ export function NavBar(){
         <header className={`${styles.header} ${colorChange ? `${styles.navbar}` : ''}`}>
             <nav className={click ? styles.active : ''}>
                 <div className={styles.wrapper}>
-                    <button>
+                    <button onClick={userSignOut}>
                         <VscSignOut size="25" color="#908d8d"/>
                         <span>Sair</span>
                     </button>
