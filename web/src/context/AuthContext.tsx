@@ -8,6 +8,7 @@ type ContextData = {
     user: UserProps | null;
     userSignIn: (userData: SignInProps) => Promise<UserProps>;
     userSignUp: (userData: SignUpProps) => Promise<UserProps>;
+    userSignOut: () => void;
     getCurrentUser: () => Promise<UserProps>;
 }
 
@@ -31,6 +32,12 @@ export const AuthProvider = ({ children }: ElementChildren) => {
         return getCurrentUser();
     }
 
+    const userSignOut = () => {
+        setUser(null);
+        localStorage.removeItem('@Forum:Token');
+        window.location.href = '/';
+    }
+
     const getCurrentUser = async () => {
         const { data } = await api.get("api/user")
         setUser(data)
@@ -51,6 +58,7 @@ export const AuthProvider = ({ children }: ElementChildren) => {
                 userSignIn,
                 getCurrentUser,
                 userSignUp,
+                userSignOut,
             }
         }>
             {children}

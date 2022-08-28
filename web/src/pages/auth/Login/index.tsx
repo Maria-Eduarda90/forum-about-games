@@ -3,10 +3,41 @@ import { Button } from '../../../components/Button';
 import styles from './styles.module.scss';
 import iconImg from '../../../img/680ed9ad3e25665eb9f5d9f598a119b7.jpg';
 import { Link } from 'react-router-dom';
-import { loginAuth } from '../../../hooks/loginAuth';
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { validationsLogin } from "./validation";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from '../../../hooks/useAuth';
 
 export function Login(){
-    const formik = loginAuth();
+    const navigate = useNavigate();
+    const { userSignIn } = useAuth();
+
+    const formik = useFormik({
+        onSubmit: async (values) => {
+            try {
+                const data = {
+                    email: values.email,
+                    password: values.password,
+                };
+
+                const response = await userSignIn(data);
+
+                if (response) {
+                    navigate("/home");
+                    return;
+                }
+            } catch (err) {
+                alert("email ou senha incorreto");
+            }
+        },
+        validationSchema: Yup.object(validationsLogin),
+        validateOnMount: true,
+        initialValues: {
+            email: "",
+            password: "",
+        },
+    });
 
     return(
         <div className={styles.container}>
