@@ -13,7 +13,7 @@ export function Signup() {
                     <img src={iconImg} alt="controle ps" />
                     <h1>WELCOME!</h1>
                     <p>Bem vindo ao fórum sobre Games 🎮</p>
-                    <Input type={'text'} placeholder={'Username'} />
+                    <Input type={'text'} placeholder={'Name'} />
                     <Input type={'email'} placeholder={'E-mail'} />
                     <Input type={'password'} placeholder={'Password'} />
                     <Input type={'url'} placeholder={'url da sua foto (opcional)'} />
