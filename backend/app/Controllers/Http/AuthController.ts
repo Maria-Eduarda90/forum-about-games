@@ -24,12 +24,12 @@ export default class AuthController {
 
   public async register({ request }: HttpContextContract){
     try {
-      const { name, email, password, url } = request.only(['name', 'email', 'password', 'url']);
+      const { name, email, password, avatar } = request.only(['name', 'email', 'password', 'avatar']);
 
       const createUser = await User.create({
         name,
         email,
-        url,
+        avatar,
         password,
       });
 
