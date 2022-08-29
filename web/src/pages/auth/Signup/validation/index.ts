@@ -6,7 +6,6 @@ export const validationsSignUp = {
     .required("Preencha o campo name")
     .min(3, "Minimo de 3 caracteres.")
     .max(200, "Maximo de 200 caracteres"),
-
   email: yup
     .string()
     .required("Preencha o campo e-mail")
@@ -17,4 +16,6 @@ export const validationsSignUp = {
     .required("Preencha o campo senha")
     .min(8, "Minimo de 8 caracteres")
     .max(200, "Maximo de 200 caracteres"),
+  url: yup
+    .string(),
 };
