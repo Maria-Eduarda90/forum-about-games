@@ -1,19 +1,26 @@
-import { CommentTypeProps } from "../../data/@types/Comment";
+import { useComment } from "../../hooks/useComments";
 import imgAvatar from '../../img/Avatar.svg';
 import styles from './styles.module.scss';
 
-export function Comments({ name, email, avatar, children }: CommentTypeProps){
+export function Comments(){
+    const { comment } = useComment();
     return(
-        <div className={styles.container}>
-           <div className={styles.image}>
-                <img src={avatar ?? imgAvatar} alt="foto do usuario" />
-           </div>
-           <div className={styles.content}>
-                <span className={styles.name}>{name}</span>
-                <span className={styles.email}>{email}</span>
+        <>
+            {comment.map(index => {
+                return(
+                    <div className={styles.container} key={index.id}>
+                        <div className={styles.image}>
+                            <img src={index.user.avatar ?? imgAvatar} alt="foto do usuario" />
+                        </div>
+                        <div className={styles.content}>
+                            <span className={styles.name}>{index.user.name}</span>
+                            <span className={styles.email}>{index.user.email}</span>
 
-                <p>{children}</p>
-           </div>
-        </div>
+                            <p>{index.comment}</p>
+                        </div>
+                    </div>
+                );
+            })}
+        </>
     );
 }

@@ -7,9 +7,7 @@ export function Forum(){
         <>
             <NavBar/>
             <SendCommentForm/>
-            <Comments name="Meyh Mary" email="MeyhMary@gmail.com" >
-                Call of duty Black Ops melho jogo!!! aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            </Comments>
+            <Comments />
         </>
     );
 }
