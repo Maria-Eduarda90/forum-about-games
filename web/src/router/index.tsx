@@ -12,8 +12,8 @@ export function AppRouter(){
     return(
         <Router>
             <Routes>
-                <Route path="/" element={<Login />} />
                 <Route path="/cadastrar" element={<Signup />} />
+                <Route path="/login" element={<Login />} />
 
                 <Route path="/" element={<PrivateRouter />}>
                     <Route path="/home" element={<Home />} />

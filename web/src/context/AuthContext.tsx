@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }: ElementChildren) => {
     const userSignOut = () => {
         setUser(null);
         localStorage.removeItem('@Forum:Token');
-        window.location.href = '/';
+        window.location.href = '/login';
     }
 
     const getCurrentUser = async () => {

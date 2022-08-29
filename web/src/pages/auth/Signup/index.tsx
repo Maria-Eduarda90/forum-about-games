@@ -110,7 +110,7 @@ export function Signup() {
                         {formik.isSubmitting ? 'Cadastrando...' : 'Cadastrar'}
                     </Button>
 
-                    <p>já possui uma conta?<Link to="/">Login</Link></p>
+                    <p>já possui uma conta?<Link to="/login">Login</Link></p>
                 </form>
             </div>
         </div>
