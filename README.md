@@ -77,6 +77,8 @@ $ npm run dev
     - Cadastro e Autenticação de Usuário via Token
     - Listagem
     - Cadastro de Comentarios
+    - Mobile Responsive
+    - Rotas Privadas
 
 <h1 align="center"> 
 	Projeto

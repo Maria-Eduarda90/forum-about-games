@@ -21,15 +21,13 @@ export function Signup() {
                     name: values.name,
                     email: values.email,
                     password: values.password,
-                    url: values.url,
+                    avatar: values.avatar,
                 }
-                console.log('data: ', data);
 
                 const response = await userSignUp(data);
-                console.log('response: ', response);
 
                 if (response) {
-                    navigate('/');
+                    navigate('/login');
                 }
             } catch (err) {
                 alert(err);
@@ -41,7 +39,7 @@ export function Signup() {
             name: '',
             email: '',
             password: '',
-            url: '',
+            avatar: '',
         }
     })
 
@@ -51,8 +49,8 @@ export function Signup() {
                 <form onSubmit={formik.handleSubmit}>
                     <div className={styles.description}>
                         <img src={iconImg} alt="controle ps" />
-                        <h2>WELCOME!</h2>
-                        <p>Bem vindo ao fórum sobre Games 🎮</p>
+                        <h1>WELCOME!</h1>
+                        <h2>Bem vindo ao fórum sobre Games 🎮</h2>
                     </div>
                     
                     <Input
@@ -95,7 +93,7 @@ export function Signup() {
                     )}
 
                     <Input
-                     name="url"
+                     name="avatar"
                      type={'url'} 
                      placeholder={'url da sua foto (opcional)'} 
                      onChange={formik.handleChange}
