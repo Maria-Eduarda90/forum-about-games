@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width="150px" alt="logo" title="#logo" src="./web/src/images/Logo.png" />
+  Plataforma com informações sobre jogos
 </h1>
 
 <p align="center">
