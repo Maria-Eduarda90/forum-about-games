@@ -4,6 +4,7 @@ import styles from './styles.module.scss';
 
 export function Comments(){
     const { comment } = useComment();
+    console.log(comment);
     return(
         <>
             {comment.map(index => {
