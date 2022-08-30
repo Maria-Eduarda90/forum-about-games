@@ -1,5 +1,5 @@
 <h1 align="center">
-  Plataforma com informações sobre jogos
+  forum-about-games
 </h1>
 
 <p align="center">
