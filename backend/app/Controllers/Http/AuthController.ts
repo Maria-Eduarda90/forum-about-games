@@ -29,8 +29,8 @@ export default class AuthController {
       const createUser = await User.create({
         name,
         email,
-        avatar,
         password,
+        avatar,
       });
 
       return createUser;
