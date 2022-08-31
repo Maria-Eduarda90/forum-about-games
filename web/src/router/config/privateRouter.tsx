@@ -11,5 +11,5 @@ export function PrivateRouter() {
     }
 
     const auth = useAuth();
-    return auth ? <Outlet /> : <Navigate to="/" />
+    return auth ? <Outlet /> : <Navigate to="/login" />
 }
