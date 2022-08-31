@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 
 import GodOfWar from '../../img/God-of-War-First-PC-mods.png';
-import SpiderMan from '../../img/CjY47LXQ9XrtJolJNVGwc29D.png';
+import SpiderMan from '../../img/spider-man.png';
 
 export function Cards(){
     return(
