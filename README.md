@@ -33,7 +33,7 @@
 
 ```bash
 # Acesse a pasta do projeto no terminal/cmd
-$ cd forum-adonisJS
+$ cd forum-about-games
 
 # Vá para a pasta server
 $ cd backend
