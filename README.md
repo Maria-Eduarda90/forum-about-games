@@ -85,5 +85,5 @@ $ npm run dev
 </h1>
 
 <h1 align="center">
-  <img alt="Fórum-games" title="#Fórum-games" src="" />
+  <img alt="Fórum-games" title="#Fórum-games" src="./web/src/img/ice_video_20220830-212148_edit_0.gif" />
 </h1>
