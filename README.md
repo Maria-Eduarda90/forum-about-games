@@ -63,7 +63,7 @@ $ npm run dev
 
 </br>
 
-# Sobre:
+## 💻 Sobre o projeto
 
 <p>
     A ideia do projeto é para aprender como funciona a autenticação no Adonisjs, aplicar boas praticas, e se familiarizar um pouco mais com o css.
