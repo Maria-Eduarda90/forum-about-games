@@ -18,7 +18,6 @@
 - Swiper React
 - Yup
 - Formik
-
 - NodeJS
 - Lucid
 - AdonisJS
@@ -29,7 +28,7 @@
 
 ### Como rodar o projeto
 
-### 🎲 Rodando o BackEnd (servidor)
+### 🎲 Rodando o Back-End (servidor)
 
 ```bash
 # Acesse a pasta do projeto no terminal/cmd
@@ -39,14 +38,14 @@ $ cd forum-about-games
 $ cd backend
 
 # Instale as dependências
-$ npm install
+$ yarn || npm i
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run dev
+$ yarn dev || npm run dev
 
 ```
 
-### 🎲 Rodando o FrontEnd
+### 🎲 Rodando o Front-End
 
 ```bash
 
@@ -54,10 +53,10 @@ $ npm run dev
 $ cd web
 
 # Instale as dependências
-$ npm install
+$ yarn || npm i
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run dev
+$ yarn || npm run dev
 
 ```
 
