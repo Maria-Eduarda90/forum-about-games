@@ -56,7 +56,7 @@ $ cd web
 $ yarn || npm i
 
 # Execute a aplicação em modo de desenvolvimento
-$ yarn || npm run dev
+$ yarn dev || npm run dev
 
 ```
 
