@@ -19,8 +19,8 @@
 - Yup
 - Formik
 - NodeJS
-- Lucid
 - AdonisJS
+- Lucid
 - Sqlite
 - Middleware
 
