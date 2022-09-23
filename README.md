@@ -1,5 +1,5 @@
 <h1 align="center">
-  forum-about-games
+  forum-about-games 🎮
 </h1>
 
 <p align="center">
