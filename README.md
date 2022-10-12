@@ -65,7 +65,7 @@ $ yarn dev || npm run dev
 ## 💻 Sobre o projeto
 
 <p>
-    A ideia do projeto é para aprender como funciona a autenticação no Adonisjs, aplicar boas praticas, e se familiarizar um pouco mais com o css.
+    A ideia do projeto é para aprender como funciona a autenticação no AdonisJS, aplicar boas praticas, e se familiarizar um pouco mais com o css.
 </p>
 
 </br>
@@ -78,6 +78,7 @@ $ yarn dev || npm run dev
     - Cadastro de Comentarios
     - Mobile Responsive
     - Rotas Privadas
+    - validação de formulário
 
 <h1 align="center"> 
 	Projeto
