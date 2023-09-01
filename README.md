@@ -1,7 +1,3 @@
-<h1 align="center">
-  🎮
-</h1>
-
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="PRs welcome!" />
 
